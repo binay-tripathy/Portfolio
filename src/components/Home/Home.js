@@ -3,6 +3,7 @@ import './Home.scss';
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import Vector from '../../assets/images/myvector.png'
+import Loader from 'react-loaders'
 
 const Home = () => {
   const letterClass = 'text-animate';
@@ -29,6 +30,7 @@ const Home = () => {
           <img src={Vector} alt="My Vector" />
         </div>
       </div>
+      <Loader type='ball-clip-rotate-multiple'/>
     </>
   )
 

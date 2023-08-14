@@ -3,6 +3,7 @@ import './About.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faHtml5, faJava, faJsSquare, faLinux, faReact } from '@fortawesome/free-brands-svg-icons'
+import Loader from 'react-loaders'
 
 const About = () => {
     return (
@@ -50,6 +51,7 @@ const About = () => {
                 </div>
 
             </div>
+            <Loader type="ball-clip-rotate-multiple" />
         </>
     )
 }

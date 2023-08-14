@@ -1,6 +1,7 @@
-$primary-color: #ffd700;
+$primary-color: #ffffff;
 
 @import 'animate.css';
+@import '~loaders.css/src/animations/ball-clip-rotate-multiple.scss';
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
@@ -15,4 +16,17 @@ $primary-color: #ffd700;
 }
 input, textarea{
   font-family: 'Helvetica Neue';
+}
+.loader-active{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }

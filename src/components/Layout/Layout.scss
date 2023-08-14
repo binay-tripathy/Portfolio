@@ -37,7 +37,8 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
-.container.about-page {
+.about-page,
+.contact-page {
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
