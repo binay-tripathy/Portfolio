@@ -1,0 +1,92 @@
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeIn 1s 1.4s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+    resize: none;
+    text-decoration: none;
+    &::-webkit-scrollbar-track {
+      background-color: white;
+    }
+    &::-webkit-scrollbar {
+      width: 4px;
+      background-color: #f5f5f5;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 100px;
+      box-shadow: 3px 0px 12px 4px grey;
+      background-color: rgba(59, 59, 59, 0.81);
+    }
+  }
+
+  .flat-button {
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ffffff;
+    float: left;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+    &:hover {
+      background: #d8d8d8;
+      color: #333333;
+    }
+  }
+}
