@@ -12,7 +12,7 @@ const Contact = () => {
                         <AnimatedLetters letterClass='text-animate' strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']} idx={15} />
                     </h1>
                     <p>
-                        If you have any other requests or questions, don't hesitate to contact me using below form either.
+                        If you have any requests or questions, don't hesitate to contact me using below form either.
                     </p>
                     <div className="contact-form">
                         <form>
