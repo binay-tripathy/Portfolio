@@ -2,6 +2,7 @@ import React from 'react'
 import './Contact.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import Loader from 'react-loaders'
+import ContactImg from '../../assets/images/Contact.png'
 
 const Contact = () => {
     return (
@@ -35,6 +36,9 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
+                </div>
+                <div className="contact-img">
+                    <img src={ContactImg} alt="contact" />
                 </div>
             </div>
             <Loader type='ball-clip-rotate-multiple' />

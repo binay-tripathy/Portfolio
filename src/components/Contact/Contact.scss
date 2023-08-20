@@ -90,3 +90,23 @@
     }
   }
 }
+.contact-img {
+  float: right;
+  width: 43%;
+  margin-top: 12%; 
+  display: block;  
+  img {
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1.2s 1.2s;
+    animation-fill-mode: forwards;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact-img {
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+  }
+}
