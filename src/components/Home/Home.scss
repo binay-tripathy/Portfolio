@@ -28,12 +28,11 @@
     }
 
     &:after {
-      content: '<h1/>';
+      content: '</h1>';
       font-family: 'La Belle Aurore', cursive;
       color: #ffffff;
       font-size: 18px;
       position: absolute;
-      // margin-top: 18px;
       left: -30px;
       bottom: 80px;
       margin-left: 20px;

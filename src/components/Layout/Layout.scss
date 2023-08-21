@@ -9,7 +9,7 @@
   top: 35px;
 }
 
-.bottom-tags{
+.bottom-tags {
   top: auto;
   margin-bottom: 30px;
 }
@@ -43,7 +43,8 @@
   animation-delay: 1s;
 }
 .about-page,
-.contact-page {
+.contact-page,
+.portfolio-page {
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
@@ -67,7 +68,7 @@
     }
 
     &:after {
-      content: '<h1/>';
+      content: '</h1>';
       font-family: 'La Belle Aurore', cursive;
       color: #ffffff;
       font-size: 18px;
@@ -101,8 +102,6 @@
     display: table-cell;
     max-height: 90%;
   }
-
-  
 }
 .custom-shape-divider-bottom-1692024869 {
   position: absolute;
@@ -122,5 +121,5 @@
 }
 
 .custom-shape-divider-bottom-1692024869 .shape-fill {
-  fill: #1F4069;
+  fill: #1f4069;
 }

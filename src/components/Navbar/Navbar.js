@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo1 from '../../assets/images/Logo_1.png'
-// import Logo2 from '../../assets/images/Logo_2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import './Navbar.scss'
 const Navbar = () => {
@@ -19,10 +18,12 @@ const Navbar = () => {
                 <NavLink exact="true" activeclassname="active" className='about-link' to='/about'>
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
                 </NavLink>
+                <NavLink exact="true" activeclassname="active" className='portfolio-link' to='/portfolio'>
+                    <FontAwesomeIcon icon={faBriefcase} color='#4d4d4e' />
+                </NavLink>
                 <NavLink exact="true" activeclassname="active" className='contact-link' to='/contact'>
                     <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
                 </NavLink>
-
             </nav>
             <ul>
                 <li>
