@@ -82,8 +82,23 @@
     width: 450px;
     bottom: 0;
     margin-bottom: -3%;
+    // will-change: filter;
+    transition: filter 0.3s ease-out;
+    &:hover {
+      --stroke-pos: 1px;
+      --stroke-neg: -1px;
+      --stroke-color: rgba(255, 255, 255, 0.2);
+      filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
+        drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+        drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+        drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+        drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
+        drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+        drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+        drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
+    }
   }
-  .image-container{
+  .image-container {
     stroke: #ffffff;
     stroke-width: 10;
   }
