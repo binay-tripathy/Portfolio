@@ -91,10 +91,13 @@
   }
 }
 .contact-img {
-  float: right;
-  width: 43%;
-  margin-top: 12%; 
-  display: block;  
+  // float: right;
+  // width: 43%;
+  // margin-top: 12%;
+  // display: block;
+  position: absolute;
+  right: 5%;
+  top: 27%;
   img {
     position: relative;
     opacity: 0;

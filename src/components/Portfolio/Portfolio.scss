@@ -1,0 +1,26 @@
+.grid-container {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto;
+  //   grid-template-columns: auto auto auto;    FOR THREE COLUMNS(For my Reference)
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  img {
+    width: 330px;
+    height: 220px;
+    opacity: 0;
+    animation: fadeIn 1.2s 1.2s;
+    animation-fill-mode: forwards;
+    &:hover {
+      transform: scale(1.2);
+      z-index: 1;
+    }
+  }
+}
