@@ -85,8 +85,8 @@
     // will-change: filter;
     transition: filter 0.3s ease-out;
     &:hover {
-      --stroke-pos: 1px;
-      --stroke-neg: -1px;
+      --stroke-pos: 2px;
+      --stroke-neg: -2px;
       --stroke-color: rgba(255, 255, 255, 0.2);
       filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
         drop-shadow(var(--stroke-neg) 0 var(--stroke-color))

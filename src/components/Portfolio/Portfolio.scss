@@ -12,24 +12,49 @@
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  position: relative;
+  .overlay {
+    z-index: 1;
+    overflow: hidden;
+    width: fit-content;
+    // max-width: 73%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    display: none;
+    cursor: pointer;
+    
+  }
   img {
+    display: block;
     width: 330px;
     height: 220px;
     opacity: 0;
     animation: fadeIn 1.2s 1.2s;
     animation-fill-mode: forwards;
-    &:hover {
-      z-index: 1;
-      -moz-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+  }
+  &:hover {
+    z-index: 1;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 
-      -webkit-transition: transform 0.7s ease-in-out;
-      -moz-transition: transform 0.7s ease-in-out;
-      -ms-transition: transform 0.7s ease-in-out;
+    -webkit-transition: transform 0.7s ease-in-out;
+    -moz-transition: transform 0.7s ease-in-out;
+    -ms-transition: transform 0.7s ease-in-out;
+    img{
+      background-color: rgb(246, 187, 115);
+    }
+    .overlay {
+      display: block;
     }
   }
 }

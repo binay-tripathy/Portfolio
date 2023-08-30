@@ -18,10 +18,11 @@ const Portfolio = () => {
                 </div>
                 <div className="grid-container">
                     <div className="grid-item">
-                        <a href="https://wetter-binay-tripathy.vercel.app/" target='blank'><img src={image1} alt="Wetter" /></a>
+                        
+                        <a href="https://wetter-binay-tripathy.vercel.app/" target='blank'><div className='overlay'>Wetter</div><img src={image1} alt="Wetter" /></a>
                     </div>
                     <div className="grid-item">
-                        <a href="https://plantlet.vercel.app/" target='blank'><img src={image2} alt="Plantlet" /></a>
+                        <a href="https://plantlet.vercel.app/" target='blank'><div className='overlay'>Plantlet</div><img src={image2} alt="Plantlet" /></a>
                     </div>
                     <div className="grid-item">
                         <a href="https://grill-and-chill.vercel.app/" target='blank'><img src={image3} alt="Grill&Chill" /></a>
