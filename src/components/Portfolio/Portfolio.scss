@@ -13,10 +13,11 @@
   font-size: 30px;
   text-align: center;
   position: relative;
+  display: inline-block;
   .overlay {
     z-index: 1;
     overflow: hidden;
-    width: fit-content;
+    // width: fit-content;
     // max-width: 73%;
     position: absolute;
     top: 46%;
@@ -28,11 +29,27 @@
     object-fit: contain;
     display: none;
     cursor: pointer;
-    
+    margin-top: 10px;
+    // margin-bottom: -22%;
+    // margin-top: -22%;
+    // padding-top: 50%;
+    height: 220px;
+    width: 330px;
+    // max-width: 100%;
+    background-color: rgba(79, 153, 206, 0.8);
+    color: #4D2DB7;
+    h5{
+      font-size: 28px;
+    }
+    span{
+      font-size: 23px;
+      margin: auto;
+    }
   }
   img {
     display: block;
     width: 330px;
+    max-width: 100%;
     height: 220px;
     opacity: 0;
     animation: fadeIn 1.2s 1.2s;
@@ -50,9 +67,9 @@
     -webkit-transition: transform 0.7s ease-in-out;
     -moz-transition: transform 0.7s ease-in-out;
     -ms-transition: transform 0.7s ease-in-out;
-    img{
-      background-color: rgb(246, 187, 115);
-    }
+    // img {
+    //   background-color: rgb(246, 187, 115);
+    // }
     .overlay {
       display: block;
     }

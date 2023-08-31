@@ -19,16 +19,16 @@ const Portfolio = () => {
                 <div className="grid-container">
                     <div className="grid-item">
                         
-                        <a href="https://wetter-binay-tripathy.vercel.app/" target='blank'><div className='overlay'>Wetter</div><img src={image1} alt="Wetter" /></a>
+                        <a href="https://wetter-binay-tripathy.vercel.app/" target='blank'><div className='overlay'><h5>Wetter</h5><span>The Weather App</span></div><img src={image1} alt="Wetter" /></a>
                     </div>
                     <div className="grid-item">
-                        <a href="https://plantlet.vercel.app/" target='blank'><div className='overlay'>Plantlet</div><img src={image2} alt="Plantlet" /></a>
+                        <a href="https://plantlet.vercel.app/" target='blank'><div className='overlay'><h5>Plantlet</h5><span>Smart Odisha Hackathon Project</span></div><img src={image2} alt="Plantlet" /></a>
                     </div>
                     <div className="grid-item">
-                        <a href="https://grill-and-chill.vercel.app/" target='blank'><img src={image3} alt="Grill&Chill" /></a>
+                        <a href="https://grill-and-chill.vercel.app/" target='blank'><div className='overlay'><h5>Grill And Chill</h5><span>Restaurant Landing Page</span></div><img src={image3} alt="Grill&Chill" /></a>
                     </div>
                     <div className="grid-item">
-                        <a href="https://to-do-list-nine-lac.vercel.app/" target='blank'><img src={image4} alt="ToDoList" /></a>
+                        <a href="https://to-do-list-nine-lac.vercel.app/" target='blank'><div className='overlay'><h5>To-Do List</h5><span>App to Organize your Work</span></div><img src={image4} alt="ToDoList" /></a>
                     </div>
                 </div>
             </div>
