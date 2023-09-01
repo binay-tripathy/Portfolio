@@ -47,7 +47,7 @@
 .portfolio-page {
   h1 {
     font-size: 53px;
-    font-family: 'Coolvetica';
+    font-family: 'Poppins';
     color: #ffffff;
     font-weight: 400;
     margin-top: 0;
@@ -82,19 +82,21 @@
   }
 
   p {
-    font-size: 15px;
+    font-size: 18px;
     color: #ffffff;
-    font-family: sans-serif;
-    font-weight: 300;
+    font-family: 'Charm', cursive;
+    font-weight: 100;
     max-width: fit-content;
     animation: pulse 1s;
-    word-spacing: 3px;
+    word-spacing: 6px;
+    letter-spacing: 0.5px;
     padding-bottom: 8px;
   }
 
   .text-zone {
     position: absolute;
     left: 10%;
+    font-family: 'Charm', cursive;
     top: 50%;
     transform: translateY(-50%);
     width: 35%;

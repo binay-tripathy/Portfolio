@@ -2,6 +2,8 @@ $primary-color: #ffffff;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/ball-clip-rotate-multiple.scss';
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
@@ -11,11 +13,18 @@ $primary-color: #ffffff;
   src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Coolvetica';
-  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('ttf');
 }
-input, textarea{
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('./assets/fonts/EBGaramond-Regular.ttf') format('ttf');
+}
+input{
   font-family: 'Helvetica Neue';
+}
+textarea{
+  font-family: 'Charm', cursive;
 }
 .loader-active{
   display: block;

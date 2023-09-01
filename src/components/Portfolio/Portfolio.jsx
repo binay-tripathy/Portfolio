@@ -15,6 +15,9 @@ const Portfolio = () => {
                     <h1>
                         <AnimatedLetters letterClass='text-animate' strArray={['M', 'y', ' ', 'W', 'o', 'r', 'k']} idx={15} />
                     </h1>
+                    <p>
+                        I have done a few projects and mostly on Frontend Development. Take a look at some of my them!!
+                    </p>
                 </div>
                 <div className="grid-container">
                     <div className="grid-item">

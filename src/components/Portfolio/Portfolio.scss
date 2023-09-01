@@ -1,3 +1,6 @@
+.portfolio-page .text-zone{
+  width: 25%;
+}
 .grid-container {
   position: absolute;
   right: 10%;
@@ -17,8 +20,6 @@
   .overlay {
     z-index: 1;
     overflow: hidden;
-    // width: fit-content;
-    // max-width: 73%;
     position: absolute;
     top: 46%;
     left: 50%;
@@ -38,12 +39,16 @@
     // max-width: 100%;
     background-color: rgba(79, 153, 206, 0.8);
     color: #4D2DB7;
+    
     h5{
+      font-family: 'EB Garamond', serif; 
       font-size: 28px;
+      font-weight: 500;
     }
     span{
       font-size: 23px;
       margin: auto;
+      font-family: 'Charm', cursive;
     }
   }
   img {
@@ -67,9 +72,6 @@
     -webkit-transition: transform 0.7s ease-in-out;
     -moz-transition: transform 0.7s ease-in-out;
     -ms-transition: transform 0.7s ease-in-out;
-    // img {
-    //   background-color: rgb(246, 187, 115);
-    // }
     .overlay {
       display: block;
     }
