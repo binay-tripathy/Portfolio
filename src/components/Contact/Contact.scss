@@ -36,10 +36,10 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #D5CEA3;
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    color: #3C2A21;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -47,10 +47,10 @@
   textarea {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #D5CEA3;
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    color: #3C2A21;
     padding: 20px;
     box-sizing: border-box;
     min-height: 150px;
@@ -65,8 +65,8 @@
     }
     &::-webkit-scrollbar-thumb {
       border-radius: 100px;
-      box-shadow: 3px 0px 12px 4px grey;
-      background-color: rgba(59, 59, 59, 0.81);
+      box-shadow: 3px 0px 12px 4px #3C2A21;
+      background-color: #3C2A21;
     }
   }
 

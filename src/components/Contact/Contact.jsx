@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import Loader from 'react-loaders'
-import ContactImg from '../../assets/images/Contact.png'
+import ContactImg from '../../assets/images/Contact2.png'
 
 const Contact = () => {
     return (

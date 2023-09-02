@@ -20,11 +20,8 @@ $primary-color: #ffffff;
   font-family: 'EB Garamond';
   src: url('./assets/fonts/EBGaramond-Regular.ttf') format('ttf');
 }
-input{
+input, textarea{
   font-family: 'Helvetica Neue';
-}
-textarea{
-  font-family: 'Charm', cursive;
 }
 .loader-active{
   display: block;

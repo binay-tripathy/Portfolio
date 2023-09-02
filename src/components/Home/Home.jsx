@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.scss';
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
-import Vector from '../../assets/images/myvector.png'
+import Vector from '../../assets/images/myvector1.png'
 import Loader from 'react-loaders'
 
 const Home = () => {
