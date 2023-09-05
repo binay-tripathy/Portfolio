@@ -13,4 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 @media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
 }
