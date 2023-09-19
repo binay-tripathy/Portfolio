@@ -24,7 +24,7 @@ const Home = () => {
             <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={10} />
           </h1>
           <h2>Front End Developer / Offensive Security / Java Programmer</h2>
-          <Link to="/contact" className="flat-button"> CONTACT ME </Link>
+          <Link to="/Portfolio/contact" className="flat-button"> CONTACT ME </Link>
         </div>
         <div className='image-container'>
           <img src={Vector} alt="My Vector" />

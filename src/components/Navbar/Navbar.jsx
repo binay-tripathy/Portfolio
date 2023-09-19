@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo1 from '../../assets/images/Logo_1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,20 +8,20 @@ import './Navbar.scss'
 const Navbar = () => {
     return (
         <div className='nav-bar'>
-            <Link to='/' className='logo'>
+            <Link to='/Portfolio/' className='logo'>
                 <img className='sub-logo' src={Logo1} alt="logo" />
             </Link>
             <nav>
-                <NavLink exact="true" activeclassname="active" to='/'>
+                <NavLink exact="true" activeclassname="active" to='/Portfolio/'>
                     <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className='about-link' to='/about'>
+                <NavLink exact="true" activeclassname="active" className='about-link' to='/Portfolio/about'>
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className='portfolio-link' to='/portfolio'>
+                <NavLink exact="true" activeclassname="active" className='projects-link' to='/Portfolio/projects'>
                     <FontAwesomeIcon icon={faBriefcase} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className='contact-link' to='/contact'>
+                <NavLink exact="true" activeclassname="active" className='contact-link' to='/Portfolio/contact'>
                     <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
                 </NavLink>
             </nav>

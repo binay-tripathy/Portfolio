@@ -1,5 +1,5 @@
 import React from 'react'
-import './Portfolio.scss'
+import './Projects.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import Loader from 'react-loaders'
 import image1 from '../../assets/images/Wetter.png';
@@ -7,10 +7,10 @@ import image2 from '../../assets/images/Plantlet.png';
 import image3 from '../../assets/images/Grill&Chill.png';
 import image4 from '../../assets/images/ToDoList.png';
 
-const Portfolio = () => {
+const Projects = () => {
     return (
         <>
-            <div className='container portfolio-page'>
+            <div className='container projects-page'>
                 <div className='text-zone'>
                     <h1>
                         <AnimatedLetters letterClass='text-animate' strArray={['M', 'y', ' ', 'W', 'o', 'r', 'k']} idx={15} />
@@ -40,4 +40,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Projects
