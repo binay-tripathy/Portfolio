@@ -8,20 +8,20 @@ import './Navbar.scss'
 const Navbar = () => {
     return (
         <div className='nav-bar'>
-            <Link to='/Portfolio/' className='logo'>
+            <Link to='/' className='logo'>
                 <img className='sub-logo' src={Logo1} alt="logo" />
             </Link>
             <nav>
-                <NavLink exact="true" activeclassname="active" to='/Portfolio/'>
+                <NavLink exact="true" activeclassname="active" to='/'>
                     <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className='about-link' to='/Portfolio/about'>
+                <NavLink exact="true" activeclassname="active" className='about-link' to='/about'>
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className='projects-link' to='/Portfolio/projects'>
+                <NavLink exact="true" activeclassname="active" className='projects-link' to='/projects'>
                     <FontAwesomeIcon icon={faBriefcase} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className='contact-link' to='/Portfolio/contact'>
+                <NavLink exact="true" activeclassname="active" className='contact-link' to='/contact'>
                     <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
                 </NavLink>
             </nav>
