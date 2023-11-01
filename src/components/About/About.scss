@@ -19,38 +19,55 @@
 
   div {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border: 1px solid #838282;
     background: rgba(255, 255, 255, 0.3);
     text-align: center;
-    font-size: 100px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 0px #E5E5CB;
   }
 
-  .face1 {
+  .face1 { //Java
     transform: translateZ(100px);
   }
-  .face2 {
-    transform: rotateY(90deg) translateZ(100px);
+  .face2 { //HTML
+    transform: rotateX(60deg) rotateY(120deg) translateZ(100px);
   }
-  .face3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  .face3 { //CSS
+    transform: rotateY(-180deg) rotateX(60deg) translateZ(100px);
   }
-  .face4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  .face4 { //React
+    transform: rotateX(120deg) rotateY(60deg)  translateZ(100px);
   }
-  .face5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  .face5 { //JavaScript
+    transform: rotateY(-60deg) translateZ(100px);
   }
-  .face6 {
-    transform: rotateX(-90deg) translateZ(100px);
+  .face6 { //Linux
+    transform: rotateX(-60deg) translateZ(100px);
+  }
+  .face7 {
+    transform: rotateY(180deg) rotateX(-60deg) translateZ(100px);
+  }
+  .face8 {
+    transform: rotateY(-180deg)  rotateX(120deg) translateZ(100px);
+  }
+  .face9 {
+    transform: translateZ(-100px);
+  }
+  .face10 {
+    transform: rotateX(60deg) rotateY(-120deg) translateZ(100px);
+  }
+  .face11 {
+    transform: rotateY(-60deg)  rotateX(180deg) translateZ(100px);
+  }
+  .face12 {
+    transform: rotateY(-180deg)  rotateX(120deg) translateZ(100px);
   }
 }
-
 @keyframes spincube {
   from,
   to {
@@ -71,4 +88,14 @@
   84% {
     transform: rotateX(90deg);
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .stage-cube-cont {
+    position: initial;
+    width: 100%;
+    height: 0%;
+    overflow: visible;
+  }
+  
 }

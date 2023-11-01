@@ -27,7 +27,7 @@ const Home = () => {
           <Link to="/contact" className="flat-button"> CONTACT ME </Link>
         </div>
         <div className='image-container'>
-          <img src={Vector} alt="My Vector" />
+          <img id='vector' src={Vector} alt="My Vector" />
         </div>
       </div>
       <Loader type='ball-clip-rotate-multiple'/>

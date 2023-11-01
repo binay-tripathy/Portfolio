@@ -70,76 +70,88 @@
       color: #333333;
     }
   }
-  .image-container{
+  .image-container {
     img {
       position: absolute;
-    top: auto;
-    right: 0;
-    bottom: auto;
-    left: auto;
-    margin: auto;
-    image-rendering: crisp-edges;
-    width: 450px;
-    bottom: 0;
-    margin-bottom: -3%;
-    transition: filter 0.2s ease-out;
-    &:hover {
-      --stroke-pos: 2px;
-      --stroke-neg: -2px;
-      --stroke-color: #e5e5cb2a;
-      
-      filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
-      drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
-      drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
-      drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
-      drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
-      drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
-      drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
-      drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
+      top: auto;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      margin: auto;
+      image-rendering: crisp-edges;
+      width: 450px;
+      bottom: 0;
+      margin-bottom: -3%;
+      transition: filter 0.2s ease-out;
+      &:hover {
+        --stroke-pos: 2px;
+        --stroke-neg: -2px;
+        --stroke-color: #e5e5cb2a;
+
+        filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
+          drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+          drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+          drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+          drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
+          drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+          drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+          drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
+      }
     }
   }
 }
-}
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 1200px) {
   .tags,
   .home-page h1:before,
   .home-page h1:after {
     display: none;
   }
 
-  .home-page .text-zone {
-    position: initial;
-    width: 100%;
-    transform: none;
-    padding: 10px;
-    box-sizing: border-box;
+  .home-page {
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    .flat-button {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 124px;
+    }
+    
+    h1{
+      font-size: 45px;
+    }
+    
+    h2{
+      font-size: 15px;
+    }
   }
-
-  .home-page .flat-button {
-    float: none;
-    display: block;
-    margin: 20px auto 0 auto;
-    width: 124px;
-  }
-
   .image-container {
     position: relative;
     width: 100px;
     height: auto;
-    top: 50px;
+    top: 350px;
     right: 0;
     box-sizing: border-box;
     margin: auto;
     left: 0;
-  }
-
-  .logo-container img {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
+    img {
+      width: 80px;
+      height: 350px;
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      margin: auto;
+      content: url(../../assets/images/myvector1-modified.png);
+      // border-radius: 90%;
+    }
   }
 }
