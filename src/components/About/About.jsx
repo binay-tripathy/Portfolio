@@ -1,11 +1,49 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faHtml5, faJava, faJsSquare, faLinux, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+const TagCloud = require('TagCloud');
 
 const About = () => {
+    const languages = [
+        'Python',
+        'Java',
+        'C',
+        'HTML',
+        'Javascript',
+        'React',
+        'Bootstrap',
+        'CSS',
+        'Linux',
+        'NPM',
+        'Git',
+        'MySQL',
+    ];
+    useEffect(() => {
+        TagCloud('.content', languages, {
+
+            radius: 400,
+            maxSpeed: 'fast',
+            initSpeed: 'fast',
+
+            top : 0,
+            left : 90,
+            rightBottom : 135,
+            direction: 135,
+
+            // interact with cursor move on mouse out
+            keep: true
+
+        });
+        
+        // Spin Random Color
+        // const colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+        // const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        // document.querySelector('.content').style.color = randomColor;
+
+        // eslint-disable-next-line
+    }, []);
+
     return (
         <>
             <div className="container about-page">
@@ -27,7 +65,7 @@ const About = () => {
                         love to work on what I like, a video gamer and tech-obsessed!!!
                     </p>
                 </div>
-                <div className="stage-cube-cont">
+                {/* <div className="stage-cube-cont">
                     <div className="cubespinner">
                         <div className="face1">
                             <FontAwesomeIcon icon={faJava} color="#DD0031" />
@@ -66,8 +104,9 @@ const About = () => {
                             <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
+                <span className="content"></span>
             </div>
             <Loader type="ball-clip-rotate-multiple" />
         </>
